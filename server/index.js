@@ -1,12 +1,15 @@
-require("dotenv").config();
-const express = require("express");
-const cors = require("cors");
-const axios = require("axios");
+import express from 'express';
+import cors from 'cors';
+import axios from 'axios';
+import dotenv from 'dotenv';
+
+dotenv.config()
 
 const app = express();
 
 const corsOptions = {
     origin: 'https://nodejs-chat-realtime.onrender.com',
+    //origin: 'http://localhost:5173/',
     credentials: true,
 };
 
